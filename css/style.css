@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    height: auto;
+    
+}
+.d{
+    /* background-color: brown; */
+    width: 600px;
+    max-height: 600px;
+    border: 3px solid greenyellow;
+    margin: 20px;
+    padding: 10px;
+    margin-top: 80px;
+    position: relative;
+
+    
+}
+.d .circle {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 1;
+
+}.d .circle2 {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(69, 15, 15);
+     position: absolute;
+     right: 10px;
+     top: 0;
+     z-index: 1;
+  }
+
+.d .a{
+    background-color: wheat;
+    margin-top:30px ;
+    padding: 10px  ;
+    width: 300px;
+    /* height: 300px; */
+}
+
+.a a{
+    text-decoration: none;
+    /* visibility: hidden; */
+
+
+    
+}
+.a a:hover{
+    color: rgb(235, 198, 14);
+     
+}
+.a a:active{
+    color: red;
+     
+}
+.a a:visited{
+    color: rgb(14, 235, 18);
+     
+}
+ a{
+    color: rgb(3, 21, 3);
+     
+}
+.d ul{
+    background-color: rgb(86, 245, 208);
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 15px;
+    list-style-type: none;
+    
+}
+li{
+    display:inline ;
+    
+}
+.b{
+    background: rgb(197, 136, 136);
+    position: sticky;
+    top: 0;
+    left: 0;right: 0;
+   
+    height:80px;
+    /* border-radius: 50%; */
+    transform: translateX(-50%);
+    transform: translateY(-10px);
+   z-index: 999; 
+   padding: 60px;
+
+}
+.down{
+    margin: 40px;
+    height:80px;position: sticky;
+    top: 0;
+    left: 0;right: 0;
+
+    background: rgb(197, 136, 136);   
+}
+    .over{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        background: rgb(222, 189, 189);
+        /* overflow-x : scroll; */
+        overflow-y : scroll;
+    
+    
+        margin: 10px 20px 10px auto;
+    
+    
+    }
+    .over div{
+        width: 300px;
+    height: 400px;
+    padding: 10px;
+    background-color: rgb(101, 249, 64);
+    
+    }

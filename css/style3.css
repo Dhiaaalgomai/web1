@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    padding: 10px;
+    margin: 20px;
+    background: rgb(217, 102, 102);
+    display: flex;
+    gap: 10px 20px;
+    height: 300px;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */  
+    
+    /* justify-content: space-around; */ 
+    /* justify-content: space-evenly; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+
+    /* align-content: flex-start;
+    align-content: flex-end; */
+    align-content: space-between;
+    align-content: space-around;
+    /* align-content: space-evenly; */
+}
+.parent div{
+    padding: 12px;
+    background: #000;
+    color: aliceblue;
+    width: 160px;
+    text-align: center;
+
+    
+}
+.parent div:nth-child(2){
+     background: rgb(53, 214, 112);
+    /* order: 2; */
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: fill;
+    /* flex: 2 0  240px; */
+}
+ .parent div:first-child{
+    background: rgb(53, 120, 214);
+    /* order: 5; */
+    flex-shrink: 2;
+}
+/*.parent div:last-child{
+    background: rgb(53, 214, 112);
+}
+.parent .start{
+    height: 100px;
+} */
