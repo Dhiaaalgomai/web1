@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+body{
+    background: #eee;
+    height: 100vh;
+    width: 100vw;
+    /* position: relative; */
+
+}
+.parent{
+    width: 300px;
+    margin: 80px auto ;
+    height: 300px;
+
+    padding: 20px;
+    box-shadow: 1px 1px 8px 0px  #777 ,4px 4px 2px 3px  rgba(35, 150, 138, 0.212);
+    position: relative;
+    transition:all .7s ease 1.5s ;
+    /* transition-delay: 1.5s; */
+
+}
+.parent:hover{
+    /* transform: translate(100px,200px); */
+    /* transform: rotate(360deg); */
+    /* transform: scale(0.9, 1.4); */
+    /* transform: skew( 10deg,20deg); */
+    width: 500px;
+    height: 500px;
+}
+.parent::before{
+    content: 'X';
+    position: absolute;
+    inset: 70px;
+    color: red;
+    font-size: 20px;
+    transition: all .5s ease-in;
+    background-color: rgba(95, 158, 160, 0.556);
+
+}
+
+.parent::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+   top: 0;
+   right: 0;
+   bottom: 0;
+    color: red;
+    font-size: 20px;
+    background-color: rgba(30, 13, 183, 0.556);
+    transform: scale(0);
+    transition: .5s ease ;
+    transform-origin: top;
+}
+
+.parent p{
+    margin-top:10px;
+
+}
+  .btn{
+    margin: 20px auto 0 ;
+    padding: 6px 20px;
+    outline: none;
+    border: 1px solid transparent;
+    background: rgb(0, 0, 0);
+    color:#fff;
+    border-radius:8px;
+    cursor: pointer;    position: relative;
+    z-index: 20;
+}
+ .btn:hover {
+    border: 1px solid black;
+    background: #fff;
+    color: black;
+}
+.b{
+    margin: 20px auto;
+    padding: 20px; 
+    width: fit-content;
+
+}
+.g{
+    padding: 5px 10px;
+    background-color: green;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 90%;
+    position: absolute;
+    left:-5px;
+    top: 40px;
+    z-index: 30;
+
+}
+.g:hover{
+    background-color:rgb(137, 46, 46) ;
+    transform: scale(1.09);
+
+
+}
+ #id{
+    background-color: royalblue;
+    padding: 10px;
+ }
+ .block{
+    display: block;
+ }
+ .heddin{
+    display: hidden;
+ }
